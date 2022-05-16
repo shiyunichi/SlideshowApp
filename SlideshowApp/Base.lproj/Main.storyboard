@@ -19,14 +19,35 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bEc-SS-kyv">
                                 <rect key="frame" x="50" y="207" width="314" height="128"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3pZ-k1-6fb">
+                                <rect key="frame" x="279" y="733" width="85" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Forward"/>
+                                <connections>
+                                    <action selector="onForw:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D8M-T5-t1J"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0M-8x-fJI">
+                                <rect key="frame" x="50" y="733" width="85" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Prev"/>
+                                <connections>
+                                    <action selector="onPrev:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tGO-Xm-AUE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3pZ-k1-6fb" secondAttribute="trailing" constant="50" id="9v4-U1-Bgn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bEc-SS-kyv" secondAttribute="trailing" constant="50" id="CtA-zg-KMg"/>
+                            <constraint firstItem="f0M-8x-fJI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Hmx-V4-yo9"/>
                             <constraint firstItem="bEc-SS-kyv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="Idl-Be-O5h"/>
+                            <constraint firstItem="3pZ-k1-6fb" firstAttribute="leading" secondItem="f0M-8x-fJI" secondAttribute="trailing" constant="50" id="Iwg-CI-WEe"/>
+                            <constraint firstItem="f0M-8x-fJI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="300" id="ZW6-GL-BNo"/>
                             <constraint firstItem="bEc-SS-kyv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="os9-SN-Sil"/>
                             <constraint firstItem="bEc-SS-kyv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="wP3-5U-OgE"/>
+                            <constraint firstItem="3pZ-k1-6fb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="300" id="x7h-Sm-ncp"/>
                         </constraints>
                     </view>
                     <connections>
@@ -35,7 +56,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="30" y="66"/>
+            <point key="canvasLocation" x="28.985507246376812" y="65.625"/>
         </scene>
     </scenes>
     <resources>

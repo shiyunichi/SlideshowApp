@@ -19,20 +19,26 @@ class ViewController: UIViewController {
     
     
     @IBAction func onPrev(_ sender: Any) {
-       //表示している画像番号を１減らす
+        //スライドショーが再生中かどうか判定
+        if (timer == nil){
+        //表示している画像番号を１減らす
         displyImageNo -= 1
         
         //表示している画像番号を元に画像を表示する
         displayImage()
+        }
     }
     
     
     @IBAction func onForw(_ sender: Any) {
+        //スライドショーが再生中かどうか判定
+        if (timer == nil){
         //表示している画像番号を１増やす
         displyImageNo += 1
         
         //表示している画像番号を元に画像を表示する
         displayImage()
+        }
     }
     
     @IBAction func onStart(_ sender: Any) {
@@ -73,7 +79,9 @@ class ViewController: UIViewController {
         let imageNameArray = [
             "ajisai",
             "kaeru",
+            "katatumuri",
             "teruteru",
+            "niji"
             ]
         
         //画像の番号が正常な範囲を指しているかチェック
@@ -81,11 +89,11 @@ class ViewController: UIViewController {
         //範囲より下を指している場合、最後の画像を表示
         if displyImageNo < 0{
             
-            displyImageNo = 2
+            displyImageNo = 4
         }
         
         //範囲より上を指している場合、最初の画像を表示
-        if displyImageNo > 2{
+        if displyImageNo > 4{
             
             displyImageNo = 0
         }

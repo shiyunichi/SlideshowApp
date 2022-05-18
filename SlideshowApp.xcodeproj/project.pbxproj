@@ -16,6 +16,8 @@
 		215A23A028326A8600B1D987 /* ajisai.png in Resources */ = {isa = PBXBuildFile; fileRef = 215A239F28326A8600B1D987 /* ajisai.png */; };
 		218BC3DF283282D5003583B0 /* kaeru.png in Resources */ = {isa = PBXBuildFile; fileRef = 218BC3DE283282D5003583B0 /* kaeru.png */; };
 		218BC3E1283282F1003583B0 /* teruteru.png in Resources */ = {isa = PBXBuildFile; fileRef = 218BC3E0283282F1003583B0 /* teruteru.png */; };
+		21BA24E7283549B800D54F71 /* katatumuri.png in Resources */ = {isa = PBXBuildFile; fileRef = 21BA24E6283549B800D54F71 /* katatumuri.png */; };
+		21BA24E9283549D700D54F71 /* niji.png in Resources */ = {isa = PBXBuildFile; fileRef = 21BA24E8283549D700D54F71 /* niji.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		215A239F28326A8600B1D987 /* ajisai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ajisai.png; sourceTree = "<group>"; };
 		218BC3DE283282D5003583B0 /* kaeru.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kaeru.png; sourceTree = "<group>"; };
 		218BC3E0283282F1003583B0 /* teruteru.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teruteru.png; sourceTree = "<group>"; };
+		21BA24E6283549B800D54F71 /* katatumuri.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = katatumuri.png; sourceTree = "<group>"; };
+		21BA24E8283549D700D54F71 /* niji.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = niji.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,8 @@
 				215A239F28326A8600B1D987 /* ajisai.png */,
 				218BC3DE283282D5003583B0 /* kaeru.png */,
 				218BC3E0283282F1003583B0 /* teruteru.png */,
+				21BA24E6283549B800D54F71 /* katatumuri.png */,
+				21BA24E8283549D700D54F71 /* niji.png */,
 				215A23912832697E00B1D987 /* Main.storyboard */,
 				215A23942832697F00B1D987 /* Assets.xcassets */,
 				215A23962832697F00B1D987 /* LaunchScreen.storyboard */,
@@ -139,7 +145,9 @@
 				215A23952832697F00B1D987 /* Assets.xcassets in Resources */,
 				215A23A028326A8600B1D987 /* ajisai.png in Resources */,
 				215A23932832697E00B1D987 /* Main.storyboard in Resources */,
+				21BA24E9283549D700D54F71 /* niji.png in Resources */,
 				218BC3E1283282F1003583B0 /* teruteru.png in Resources */,
+				21BA24E7283549B800D54F71 /* katatumuri.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

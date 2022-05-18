@@ -9,23 +9,66 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var startButton: UIButton!
     
+    //表示する画像番号を宣言し０を代入
     var displyImageNo = 0
     
+    //スライドショーに使用するタイマーを宣言
+    var timer: Timer!
+    
+    
     @IBAction func onPrev(_ sender: Any) {
+       //表示している画像番号を１減らす
         displyImageNo -= 1
         
-        displayImageNo()
+        //表示している画像番号を元に画像を表示する
+        displayImage()
     }
     
     
     @IBAction func onForw(_ sender: Any) {
+        //表示している画像番号を１増やす
         displyImageNo += 1
         
-        displayImageNo()
+        //表示している画像番号を元に画像を表示する
+        displayImage()
     }
     
-    func displayImageNo(){
+    @IBAction func onStart(_ sender: Any) {
+    
+        //再生中か停止しているかを判定
+        if (timer == nil){
+            //再生の処理を実装
+            
+            //タイマーをセットする
+            timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(changeImage), userInfo: nil, repeats: true)
+            
+            //ボタンの名前を変更する
+            startButton.setTitle("Pause", for: .normal)
+        }else{
+            //停止の処理を実装
+            //タイマーを停止する
+            timer.invalidate()
+            
+            //タイマーを削除しておく
+            timer = nil
+            
+            //ボタンの名前を再生に直す
+            startButton.setTitle("Start", for: .normal)
+        }
+    }
+    
+    @objc func changeImage(){
+        
+        //表示している画像番号を１増やす
+        displyImageNo += 1
+        
+       //表示している画像番号を元に画像を表示する
+        displayImage()
+    }
+    
+    func displayImage(){
         
         let imageNameArray = [
             "ajisai",

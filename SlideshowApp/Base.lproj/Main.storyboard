@@ -70,6 +70,7 @@
                     </view>
                     <connections>
                         <outlet property="imageView" destination="bEc-SS-kyv" id="nOt-DQ-xgk"/>
+                        <outlet property="prevButton" destination="f0M-8x-fJI" id="8Tr-dg-JMe"/>
                         <outlet property="startButton" destination="LmC-rV-mPL" id="Gh8-YE-TPw"/>
                     </connections>
                 </viewController>

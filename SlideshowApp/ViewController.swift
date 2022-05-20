@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var startButton: UIButton!
+    @IBOutlet weak var prevButton: UIButton!
     
     //表示する画像番号を宣言し０を代入
     var displyImageNo = 0
@@ -27,6 +28,7 @@ class ViewController: UIViewController {
         //表示している画像番号を元に画像を表示する
         displayImage()
         }
+        
     }
     
     
@@ -51,7 +53,10 @@ class ViewController: UIViewController {
             timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(changeImage), userInfo: nil, repeats: true)
             
             //ボタンの名前を変更する
-            startButton.setTitle("Pause", for: .normal)
+            startButton.setTitle("Stop", for: .normal)
+            //ボタンの色を変更する
+            startButton.setTitleColor(UIColor.systemRed, for: .normal)
+            
         }else{
             //停止の処理を実装
             //タイマーを停止する
@@ -62,6 +67,9 @@ class ViewController: UIViewController {
             
             //ボタンの名前を再生に直す
             startButton.setTitle("Start", for: .normal)
+            //ボタンの色を元に戻す。
+            startButton.setTitleColor(UIColor.systemBlue, for: .normal)
+            
         }
     }
     
@@ -72,6 +80,7 @@ class ViewController: UIViewController {
         
        //表示している画像番号を元に画像を表示する
         displayImage()
+        
     }
     
     func displayImage(){

@@ -11,6 +11,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var prevButton: UIButton!
+    @IBOutlet weak var forwButton: UIButton!
     
     //表示する画像番号を宣言し０を代入
     var displyImageNo = 0
@@ -20,27 +21,24 @@ class ViewController: UIViewController {
     
     
     @IBAction func onPrev(_ sender: Any) {
-        //スライドショーが再生中かどうか判定
-        if (timer == nil){
+        
         //表示している画像番号を１減らす
         displyImageNo -= 1
         
         //表示している画像番号を元に画像を表示する
         displayImage()
-        }
         
     }
     
     
     @IBAction func onForw(_ sender: Any) {
-        //スライドショーが再生中かどうか判定
-        if (timer == nil){
+        
         //表示している画像番号を１増やす
         displyImageNo += 1
         
         //表示している画像番号を元に画像を表示する
         displayImage()
-        }
+    
     }
     
     @IBAction func onStart(_ sender: Any) {
@@ -56,6 +54,9 @@ class ViewController: UIViewController {
             startButton.setTitle("Stop", for: .normal)
             //ボタンの色を変更する
             startButton.setTitleColor(UIColor.systemRed, for: .normal)
+            //prev,forwボタンを無効にする
+            prevButton.isEnabled = false
+            forwButton.isEnabled = false
             
         }else{
             //停止の処理を実装
@@ -69,6 +70,9 @@ class ViewController: UIViewController {
             startButton.setTitle("Start", for: .normal)
             //ボタンの色を元に戻す。
             startButton.setTitleColor(UIColor.systemBlue, for: .normal)
+            //prev,forwボタンを有効にする
+            prevButton.isEnabled = true
+            forwButton.isEnabled = true
             
         }
     }

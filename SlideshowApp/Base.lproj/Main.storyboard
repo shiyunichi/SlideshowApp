@@ -16,35 +16,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0M-8x-fJI">
-                                <rect key="frame" x="50.000000000000007" y="391" width="90.666666666666686" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Prev"/>
-                                <connections>
-                                    <action selector="onPrev:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tGO-Xm-AUE"/>
-                                </connections>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bEc-SS-kyv">
                                 <rect key="frame" x="50" y="144" width="275" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="X68-iF-8KU"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3pZ-k1-6fb">
-                                <rect key="frame" x="215.66666666666666" y="98" width="109.33333333333334" height="616"/>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3pZ-k1-6fb">
+                                <rect key="frame" x="235" y="390" width="90" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Forw"/>
                                 <connections>
                                     <action selector="onForw:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D8M-T5-t1J"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LmC-rV-mPL">
-                                <rect key="frame" x="159.66666666666666" y="391" width="56" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LmC-rV-mPL">
+                                <rect key="frame" x="160" y="390" width="56" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Start"/>
                                 <connections>
                                     <action selector="onStart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cz4-Xu-geG"/>
                                     <action selector="onStart:" destination="BYZ-38-t0r" eventType="touchDragOutside" id="yKU-je-NJn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0M-8x-fJI">
+                                <rect key="frame" x="50" y="390" width="90" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Prev"/>
+                                <connections>
+                                    <action selector="onPrev:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tGO-Xm-AUE"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -69,6 +69,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="forwButton" destination="3pZ-k1-6fb" id="NZo-NT-VDc"/>
                         <outlet property="imageView" destination="bEc-SS-kyv" id="nOt-DQ-xgk"/>
                         <outlet property="prevButton" destination="f0M-8x-fJI" id="8Tr-dg-JMe"/>
                         <outlet property="startButton" destination="LmC-rV-mPL" id="Gh8-YE-TPw"/>

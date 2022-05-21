@@ -16,6 +16,8 @@
 		215A23A028326A8600B1D987 /* ajisai.png in Resources */ = {isa = PBXBuildFile; fileRef = 215A239F28326A8600B1D987 /* ajisai.png */; };
 		218BC3DF283282D5003583B0 /* kaeru.png in Resources */ = {isa = PBXBuildFile; fileRef = 218BC3DE283282D5003583B0 /* kaeru.png */; };
 		218BC3E1283282F1003583B0 /* teruteru.png in Resources */ = {isa = PBXBuildFile; fileRef = 218BC3E0283282F1003583B0 /* teruteru.png */; };
+		21A5226528390BC900E51D78 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A5226428390BC900E51D78 /* NextViewController.swift */; };
+		21A5226728390C0D00E51D78 /* Next.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21A5226628390C0D00E51D78 /* Next.storyboard */; };
 		21BA24E7283549B800D54F71 /* katatumuri.png in Resources */ = {isa = PBXBuildFile; fileRef = 21BA24E6283549B800D54F71 /* katatumuri.png */; };
 		21BA24E9283549D700D54F71 /* niji.png in Resources */ = {isa = PBXBuildFile; fileRef = 21BA24E8283549D700D54F71 /* niji.png */; };
 /* End PBXBuildFile section */
@@ -32,6 +34,8 @@
 		215A239F28326A8600B1D987 /* ajisai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ajisai.png; sourceTree = "<group>"; };
 		218BC3DE283282D5003583B0 /* kaeru.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kaeru.png; sourceTree = "<group>"; };
 		218BC3E0283282F1003583B0 /* teruteru.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teruteru.png; sourceTree = "<group>"; };
+		21A5226428390BC900E51D78 /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
+		21A5226628390C0D00E51D78 /* Next.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Next.storyboard; sourceTree = "<group>"; };
 		21BA24E6283549B800D54F71 /* katatumuri.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = katatumuri.png; sourceTree = "<group>"; };
 		21BA24E8283549D700D54F71 /* niji.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = niji.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,12 +73,14 @@
 				215A238B2832697E00B1D987 /* AppDelegate.swift */,
 				215A238D2832697E00B1D987 /* SceneDelegate.swift */,
 				215A238F2832697E00B1D987 /* ViewController.swift */,
+				21A5226428390BC900E51D78 /* NextViewController.swift */,
 				215A239F28326A8600B1D987 /* ajisai.png */,
 				218BC3DE283282D5003583B0 /* kaeru.png */,
 				218BC3E0283282F1003583B0 /* teruteru.png */,
 				21BA24E6283549B800D54F71 /* katatumuri.png */,
 				21BA24E8283549D700D54F71 /* niji.png */,
 				215A23912832697E00B1D987 /* Main.storyboard */,
+				21A5226628390C0D00E51D78 /* Next.storyboard */,
 				215A23942832697F00B1D987 /* Assets.xcassets */,
 				215A23962832697F00B1D987 /* LaunchScreen.storyboard */,
 				215A23992832697F00B1D987 /* Info.plist */,
@@ -146,6 +152,7 @@
 				215A23A028326A8600B1D987 /* ajisai.png in Resources */,
 				215A23932832697E00B1D987 /* Main.storyboard in Resources */,
 				21BA24E9283549D700D54F71 /* niji.png in Resources */,
+				21A5226728390C0D00E51D78 /* Next.storyboard in Resources */,
 				218BC3E1283282F1003583B0 /* teruteru.png in Resources */,
 				21BA24E7283549B800D54F71 /* katatumuri.png in Resources */,
 			);
@@ -159,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				215A23902832697E00B1D987 /* ViewController.swift in Sources */,
+				21A5226528390BC900E51D78 /* NextViewController.swift in Sources */,
 				215A238C2832697E00B1D987 /* AppDelegate.swift in Sources */,
 				215A238E2832697E00B1D987 /* SceneDelegate.swift in Sources */,
 			);

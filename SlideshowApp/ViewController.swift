@@ -77,6 +77,12 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func imageViewTapped(_ sender: Any) {
+        print("タップした")
+    }
+    
+    
+    
     @objc func changeImage(){
         
         //表示している画像番号を１増やす
@@ -128,6 +134,7 @@ class ViewController: UIViewController {
         imageView.image = image
     }
 
+    
     
     
     

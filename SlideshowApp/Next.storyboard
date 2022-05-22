@@ -15,13 +15,42 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="24O-RT-jeP">
+                                <rect key="frame" x="20" y="94" width="374" height="637"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3o-ev-62T">
+                                <rect key="frame" x="149" y="781" width="116" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="FIG-Yg-OJe"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="戻る"/>
+                                <connections>
+                                    <action selector="backButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="d5a-xh-qaX"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="24O-RT-jeP" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="2Zr-KK-n6r"/>
+                            <constraint firstItem="U3o-ev-62T" firstAttribute="centerX" secondItem="24O-RT-jeP" secondAttribute="centerX" id="B7P-NT-I5K"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="U3o-ev-62T" secondAttribute="bottom" constant="50" id="UOs-Vl-CVW"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="24O-RT-jeP" secondAttribute="trailing" constant="20" id="cnc-km-dxr"/>
+                            <constraint firstItem="24O-RT-jeP" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="50" id="dVs-Ag-mMe"/>
+                            <constraint firstItem="24O-RT-jeP" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="tGf-Pm-kWv"/>
+                            <constraint firstItem="U3o-ev-62T" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="149" id="vMv-uD-GZf"/>
+                            <constraint firstItem="U3o-ev-62T" firstAttribute="top" secondItem="24O-RT-jeP" secondAttribute="bottom" constant="50" id="wKC-jP-u3J"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nextviewImage" destination="24O-RT-jeP" id="sK5-Gu-yg3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="30" y="78"/>
+            <point key="canvasLocation" x="28.985507246376812" y="77.678571428571431"/>
         </scene>
     </scenes>
     <resources>

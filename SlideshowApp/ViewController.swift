@@ -78,9 +78,16 @@ class ViewController: UIViewController {
     }
     
     @IBAction func imageViewTapped(_ sender: Any) {
-        print("タップした")
+       //画面遷移処理（Next.storyboad）に遷移
+        let storyboard = UIStoryboard(name: "Next", bundle: nil)
+        guard let viewContoller = storyboard.instantiateInitialViewController() as? NextViewController else { return}
+        //NextViewContllorの変数にdisplyImageNoを代入
+        viewContoller.displyImageNo = self.displyImageNo
+        
+        present(viewContoller, animated: true)
+        
     }
-    
+                
     
     
     @objc func changeImage(){

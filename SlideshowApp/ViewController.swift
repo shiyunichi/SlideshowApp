@@ -82,7 +82,7 @@ class ViewController: UIViewController {
         let storyboard = UIStoryboard(name: "Next", bundle: nil)
         guard let viewContoller = storyboard.instantiateInitialViewController() as? NextViewController else { return}
         //NextViewContllorの変数にdisplyImageNoを代入
-        viewContoller.displyImageNo = self.displyImageNo
+        viewContoller.image = imageView.image
         
         present(viewContoller, animated: true)
         

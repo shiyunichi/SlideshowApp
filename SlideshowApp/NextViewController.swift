@@ -27,6 +27,7 @@ class NextViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
+        //遷移元の画像をimageViewにセットする。
         nextviewImage.image = image
     }
     

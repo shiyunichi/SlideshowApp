@@ -81,7 +81,7 @@ class ViewController: UIViewController {
        //画面遷移処理（Next.storyboad）に遷移
         let storyboard = UIStoryboard(name: "Next", bundle: nil)
         guard let viewContoller = storyboard.instantiateInitialViewController() as? NextViewController else { return}
-        //NextViewContllorの変数にdisplyImageNoを代入
+        //NextViewContllorの変数にimageを代入する。
         viewContoller.image = imageView.image
         
         present(viewContoller, animated: true)

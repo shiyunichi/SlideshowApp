@@ -78,7 +78,26 @@ class ViewController: UIViewController {
     }
     
     @IBAction func imageViewTapped(_ sender: Any) {
-       //画面遷移処理（Next.storyboad）に遷移
+       
+        //imageをタップした時タイマーが動いていたらタイマーを停止する
+        if (timer != nil){
+            //停止の処理を実装
+            //タイマーを停止する
+            timer.invalidate()
+            
+            //タイマーを削除しておく
+            timer = nil
+            
+            //ボタンの名前を再生に直す
+            startButton.setTitle("Start", for: .normal)
+            //ボタンの色を元に戻す。
+            startButton.setTitleColor(UIColor.systemBlue, for: .normal)
+            //prev,forwボタンを有効にする
+            prevButton.isEnabled = true
+            forwButton.isEnabled = true
+        }
+        
+        //画面遷移処理（Next.storyboad）に遷移
         let storyboard = UIStoryboard(name: "Next", bundle: nil)
         guard let viewContoller = storyboard.instantiateInitialViewController() as? NextViewController else { return}
         //NextViewContllorの変数にimageを代入する。
